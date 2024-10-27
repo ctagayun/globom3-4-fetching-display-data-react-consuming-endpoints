@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qHJ7BxMA9Y8=",
+  "dgSpecHash": "27isQS2Ef10=",
   "success": true,
-  "projectFilePath": "C:\\_AMyReactDev\\building-e2e-react-app-using-netcore8-webapi-guijt\\globom3-4-fetching-setuphtml-api-call-usestate-stuff\\Api\\Api.csproj",
+  "projectFilePath": "C:\\_AMyReactDev\\building-e2e-react-app-using-netcore8-webapi-guijt\\globom3-4-fetching-setuphtml-api-call-dtos-usestate-stuff\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tiger\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\tiger\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.10\\microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
