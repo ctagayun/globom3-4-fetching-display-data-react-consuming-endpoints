@@ -6,7 +6,6 @@ download and install .net 8.osdk
 1. Setting up the completed project
    clone this repo https://github.com/rolandguijt/ps-globomantics-webapi-react
 
-
     - click clone repository  (completed project)
     - this React Project is using Vite 
 
