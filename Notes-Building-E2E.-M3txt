@@ -128,5 +128,16 @@ Module 3: Getting and Displaying Data
        - then register HouseRepository in DI container in Program.cs then change the App.MapGet to:
           app.MapGet("/houses", (IHouseRepository repo) => repo.GetAll()); 
 
-      -  - do a dotnet run --> go to localhost:4000/houses 
+      -   do a dotnet run --> go to localhost:4000/houses 
           (affix houses to the URL). You should get a list of houses
+
+  4. React Consuming Endpoints
+      - the next task is for ReactWeb to display list of houses coming from the API
+
+      - first we need a place to store DTO's needed by react. 
+           create a folder src/types and a DTO called house.ts
+
+      - next we need a file where to store the url of the API in react. Create 
+        a file called config.ts under src/config.ts
+
+      - create a folder src/house and file houseList.tsx
