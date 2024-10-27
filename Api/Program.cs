@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors();
 
 //add the HouseDbContext to the dependency injection container
 //I will be registering it with a scope of "Scope" which means a new instance
@@ -26,6 +27,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//allow everything from localhost:3000
+app.UseCors(p => p.WithOrigins("http://localhost:3000")
+    .AllowAnyHeader().AllowAnyMethod().AllowCredentials());
 
 app.UseHttpsRedirection();
 

@@ -140,4 +140,14 @@ Module 3: Getting and Displaying Data
       - next we need a file where to store the url of the API in react. Create 
         a file called config.ts under src/config.ts
 
-      - create a folder src/house and file houseList.tsx
+      - create a folder src/house and file houseList.tsx. Put the code for the view here
+
+      - the final thing to do is to render the HouseList component in app.tsx
+
+      - before running the react go to api/program.cs and add  a call to AddCors on the 
+        service object and then plug a middleware that allow everything from localhost 
+             builder.Services.AddCors();
+             app.UseCors(p => p.WithOrigins("http://localhost:3000")
+               .AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+      - start API: dotnet run 
+      - start ReactWeb: npm run dev
